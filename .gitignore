@@ -1,0 +1,8 @@
+node_modules
+
+.next
+
+# Next.js environment variables
+.env.local
+.env.*.local
+
