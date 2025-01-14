@@ -1,11 +1,10 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "@/theme";
+import CssBaseline from "@mui/material/CssBaseline";
 import Footer from "@/components/Footer";
+import AppProvider from "@/components/AppProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,17 +36,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        id="__next"
         className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <Navbar />
-            <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-              {children}
-            </main>
-            <Footer />
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <AppProvider>
+          <CssBaseline />
+          <Navbar />
+          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            {children}
+          </main>
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );
