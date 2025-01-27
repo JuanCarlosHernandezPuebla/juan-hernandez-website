@@ -25,7 +25,7 @@ export default function NavTabs({ navItems, orientation }: NavTabsProps) {
             <Tabs
                 orientation={orientation}
                 sx={[
-                    (theme) => ({
+                    () => ({
                         '.MuiTab-root': {
                             color: 'inherit',
                             minHeight: '48px',
