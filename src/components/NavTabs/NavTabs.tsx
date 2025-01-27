@@ -14,7 +14,7 @@ export default function NavTabs({ navItems, orientation }: NavTabsProps) {
         if (tabValue) {
             setValue(tabValue)
         }
-    }, [pathName])
+    }, [pathName, tabValue])
 
     const handleChange = (event: React.SyntheticEvent, newValue: string) => {
         setValue(newValue)
