@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link-btn-panel {
+    @apply w-full rounded-xl border border-zinc-200 bg-white p-3 text-black no-underline hover:shadow-lg sm:rounded-2xl md:rounded-3xl dark:bg-slate-800 dark:text-white;
+  }
+}
+
 :root {
-  --background: #ffffff;
+  --background: rgb(226 232 240 / var(--tw-bg-opacity, 1));
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root[class="dark"] {
+  --background: #334155;
+  --foreground: #ededed;
 }
 
 body {
