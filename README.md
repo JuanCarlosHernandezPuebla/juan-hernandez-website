@@ -1,3 +1,28 @@
+## Juan Hernandez Website
+
+Personal website built with Next.js, TypeScript, MUI, and Tailwind CSS. Deployed with Vercel.
+
+https://www.juancarloshernandezpuebla.com
+
+### Light Mode Theme (Default)
+
+![Screenshot from 2025-01-27 23-13-35](https://github.com/user-attachments/assets/b7702b01-aa5c-4847-a636-a3bf5ebcccc1)
+
+
+### Dark Mode Theme
+
+![Screenshot from 2025-01-27 23-14-09](https://github.com/user-attachments/assets/68ee04dd-b3bb-455a-9c84-9c75dee06e4d)
+
+### Mobile Views
+![Screenshot from 2025-01-27 23-17-15](https://github.com/user-attachments/assets/8a013f09-bfc1-4aac-9bd8-f5f9d6d0e826) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-01-27 23-17-53](https://github.com/user-attachments/assets/0a3b6c97-e0b0-426b-bab6-1238c11ffe32) ![Screenshot from 2025-01-27 23-18-11](https://github.com/user-attachments/assets/65a321dc-2180-4f3f-8e16-75707c0d16ce) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-01-27 23-18-19](https://github.com/user-attachments/assets/588a256e-f4ec-44c5-9d23-d63426e1effb)
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
