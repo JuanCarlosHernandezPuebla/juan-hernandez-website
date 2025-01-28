@@ -1,9 +1,7 @@
 import LinkButtonPanel from '@/components/LinkButtonPanel'
 import { ControlPointRounded, GitHub, LinkedIn } from '@mui/icons-material'
 import { Container } from '@mui/material'
-
-const about =
-    "I'm a Software Engineer specializing in front-end development. With expertise in modern web technologies, I build responsive, accessible, and visually compelling interfaces. I enjoy solving complex problems, continuously learning new skills, and transforming ideas into exceptional products."
+import about from './about.json'
 
 export default function Home() {
     return (
@@ -12,7 +10,7 @@ export default function Home() {
                 <h1 className="sr-only">Home</h1>
                 <section className="grid">
                     <h2>About</h2>
-                    <p className="dark:text-gray-400">{about}</p>
+                    <p className="dark:text-gray-400">{about.description}</p>
                 </section>
                 <section className="grid">
                     <h2>Get In Touch</h2>

@@ -1,0 +1,117 @@
+[
+    {
+        "id": "biw-se",
+        "title": "Software Engineer",
+        "company": "BI Worldwide",
+        "startYear": "2023",
+        "endYear": "2024",
+        "descriptions": [
+            "Led development of Reimagine, an internal employee recognition platform for Verizon Wireless",
+            "Implemented a comprehensive component library",
+            "Developed new features and functionalities based on user feedback",
+            "Supported legacy codebase and improved its maintainability"
+        ],
+        "skills": [
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "Material UI",
+            "Redux",
+            "HTML",
+            "SCSS",
+            "CSS",
+            "Git",
+            "Gitlab",
+            "Webpack",
+            "NPM",
+            "Figma",
+            "Agile"
+        ]
+    },
+    {
+        "id": "otes-wd",
+        "title": "Web Developer",
+        "company": "Orange Tree Employment Screening",
+        "startYear": "2022",
+        "endYear": "2023",
+        "descriptions": [
+            "Led development of Market Place, a lead generator and initial onboarding of new clients",
+            "Revamped Candidate Connect, a portal for candidates to provide needed information to successfully complete the backgroud screen",
+            "Composed a development plan for Client Connect, incorporating Next.js"
+        ],
+        "links": [
+            {
+                "aria-label": "Candidate Connect (opens in a new tab)",
+                "href": "https://candidateconnect2.otes.com",
+                "label": "Candidate Connect"
+            },
+            {
+                "aria-label": "Client Connect (opens in a new tab)",
+                "href": "https://otes.okta.com",
+                "label": "Client Connect"
+            }
+        ],
+        "skills": [
+            "TypeScript",
+            "JavaScript",
+            "Next.js",
+            "React",
+            "Material UI",
+            "Chakra UI",
+            "Redux",
+            "React Hook Form",
+            "Axios",
+            "React Query",
+            "React Testing Library",
+            "Jest",
+            "HTML",
+            "SCSS",
+            "CSS",
+            "Git",
+            "Bitbucket",
+            "Yarn",
+            "Figma",
+            "Agile"
+        ]
+    },
+    {
+        "id": "uhg-ase",
+        "title": "Associate Software Engineer",
+        "company": "UnitedHealth Group - Optum",
+        "startYear": "2018",
+        "endYear": "2022",
+        "descriptions": [
+            "Built and supported the Integrated Eligibilty system (Client Portal, Agency Portal, Admin)",
+            "Applied WCAG 2.0 AA standards and added multilingual support for Client Portal",
+            "Addressed critical defects and improved test coverage"
+        ],
+        "links": [
+            {
+                "aria-label": "IE Client Portal (opens in a new tab)",
+                "href": "https://www.wvpath.wv.gov",
+                "label": "IE Client Portal"
+            }
+        ],
+        "skills": [
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "React Bootstrap",
+            "Redux",
+            "React Redux I18n",
+            "React JSON Schema Form",
+            "Enzyme",
+            "Jest",
+            "HTML",
+            "SCSS",
+            "CSS",
+            "Git",
+            "GitHub",
+            "Webpack",
+            "Babel",
+            "Yarn",
+            "WCAG 2.0 AA",
+            "Agile"
+        ]
+    }
+]
