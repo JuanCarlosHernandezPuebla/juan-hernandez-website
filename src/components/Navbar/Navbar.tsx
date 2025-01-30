@@ -57,7 +57,7 @@ function Navbar({ navItems }: { navItems: NavItem[] }) {
 
     return (
         <>
-            <AppBar position="static" component="nav">
+            <AppBar component="nav">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Box
@@ -67,6 +67,12 @@ function Navbar({ navItems }: { navItems: NavItem[] }) {
                             }}
                         >
                             <IconButton
+                                sx={[
+                                    (theme) =>
+                                        theme.applyStyles('dark', {
+                                            color: 'primary.main',
+                                        }),
+                                ]}
                                 size="large"
                                 aria-label="open drawer"
                                 aria-controls="menu-appbar"

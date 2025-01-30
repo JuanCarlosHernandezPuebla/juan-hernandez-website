@@ -61,7 +61,7 @@ export default function RootLayout({
                 className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <div id="__next">
-                    <div className="m-0 grid min-h-screen grid-rows-[auto_1fr_auto]">
+                    <div className="m-0 grid min-h-screen grid-rows-[1fr_auto_auto]">
                         <InitColorSchemeScript
                             attribute="class"
                             defaultMode="light"
@@ -69,7 +69,7 @@ export default function RootLayout({
                         <AppProvider>
                             <CssBaseline />
                             <Navbar navItems={navItems} />
-                            <main className="mx-auto flex max-w-5xl flex-col items-center gap-y-8 bg-slate-50 dark:bg-slate-800">
+                            <main className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-y-8 bg-slate-50 dark:bg-slate-800">
                                 {children}
                             </main>
                             <Footer navItems={navItems} />

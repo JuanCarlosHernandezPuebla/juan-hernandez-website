@@ -42,6 +42,7 @@ export default function NavTabs({ navItems, orientation }: NavTabsProps) {
                                 backgroundColor: 'primary.main',
                                 left: 0,
                                 width: '0.25rem',
+                                transition: 'none',
                             },
                             '& .Mui-selected': {
                                 backgroundColor: '#9595951a',
