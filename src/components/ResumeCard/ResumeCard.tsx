@@ -1,17 +1,8 @@
 import { LinkRounded } from '@mui/icons-material'
 import { Button, Chip } from '@mui/material'
-import {
-    CardContentProps,
-    CardHeaderProps,
-    ResumeCardProps,
-} from './ResumeCardProps'
+import { ContentProps, HeaderProps, ResumeCardProps } from './ResumeCardProps'
 
-const CardHeader = ({
-    title,
-    company,
-    startYear,
-    endYear,
-}: CardHeaderProps) => {
+const Header = ({ title, company, startYear, endYear }: HeaderProps) => {
     return (
         <div className="flex h-full items-center justify-between">
             <div className="flex items-center gap-3">
@@ -32,7 +23,7 @@ const CardHeader = ({
     )
 }
 
-const CardContent = ({ id, descriptions, links, skills }: CardContentProps) => {
+const Content = ({ id, descriptions, links, skills }: ContentProps) => {
     return (
         <>
             <div className="text-sm text-gray-600 dark:text-gray-400">
@@ -77,34 +68,15 @@ const CardContent = ({ id, descriptions, links, skills }: CardContentProps) => {
     )
 }
 
-const ResumeCard = ({
-    id,
-    title,
-    company,
-    startYear,
-    endYear,
-    descriptions,
-    links,
-    skills,
-}: ResumeCardProps) => {
+const ResumeCard = ({ children }: ResumeCardProps) => {
     return (
         <div className="card p-6">
-            <div className="grid pl-12">
-                <CardHeader
-                    title={title}
-                    company={company}
-                    startYear={startYear}
-                    endYear={endYear}
-                />
-                <CardContent
-                    id={id}
-                    descriptions={descriptions}
-                    links={links}
-                    skills={skills}
-                />
-            </div>
+            <div className="grid pl-12">{children}</div>
         </div>
     )
 }
+
+ResumeCard.Header = Header
+ResumeCard.Content = Content
 
 export default ResumeCard

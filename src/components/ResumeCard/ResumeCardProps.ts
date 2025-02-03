@@ -4,23 +4,20 @@ interface Link {
     'aria-label': string
 }
 
-export type CardHeaderProps = Pick<
-    ResumeCardProps,
-    'title' | 'company' | 'startYear' | 'endYear'
->
-
-export type CardContentProps = Pick<
-    ResumeCardProps,
-    'id' | 'descriptions' | 'links' | 'skills'
->
-
-export interface ResumeCardProps {
-    id: string
+export interface HeaderProps {
     title: string
     company: string
     startYear: string
     endYear: string
+}
+
+export interface ContentProps {
+    id: string
     descriptions: string[]
     links?: Link[]
     skills: string[]
+}
+
+export interface ResumeCardProps {
+    children: React.ReactNode
 }
