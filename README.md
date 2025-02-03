@@ -14,7 +14,8 @@ https://www.juancarloshernandezpuebla.com
 ![Screenshot from 2025-01-27 23-14-09](https://github.com/user-attachments/assets/68ee04dd-b3bb-455a-9c84-9c75dee06e4d)
 
 ### Mobile Views
-![Screenshot from 2025-01-27 23-17-15](https://github.com/user-attachments/assets/8a013f09-bfc1-4aac-9bd8-f5f9d6d0e826) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-01-27 23-17-53](https://github.com/user-attachments/assets/0a3b6c97-e0b0-426b-bab6-1238c11ffe32) ![Screenshot from 2025-01-27 23-18-11](https://github.com/user-attachments/assets/65a321dc-2180-4f3f-8e16-75707c0d16ce) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-01-27 23-18-19](https://github.com/user-attachments/assets/588a256e-f4ec-44c5-9d23-d63426e1effb)
+![Screenshot from 2025-02-03 14-02-59](https://github.com/user-attachments/assets/81fe6bdb-74f5-4810-9165-93317ea5a113) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-02-03 14-03-07](https://github.com/user-attachments/assets/b9552752-297b-48c8-872b-ba66afd01c7c)
+ ![Screenshot from 2025-02-03 14-03-26](https://github.com/user-attachments/assets/d2d9e471-a71e-4de1-9bf2-8baf2d5a4434) &nbsp; &nbsp; &nbsp; &nbsp; ![Screenshot from 2025-02-03 14-03-34](https://github.com/user-attachments/assets/706cc59b-99c6-4885-b92c-0461b75b3b9c)
 
 
 
