@@ -1,18 +1,14 @@
-import { IconButton, useColorScheme } from '@mui/material'
+import { IconButton } from '@mui/material'
 import { DarkModeRounded, LightModeRounded } from '@mui/icons-material'
+import useDarkMode from './useDarkMode'
 
 const DarkModeToggle = () => {
-    const { mode, setMode } = useColorScheme()
+    const { mode, darkModeEnabled, handleToggleDarkMode } = useDarkMode()
 
     if (!mode) {
         return null
     }
 
-    const darkModeEnabled = mode === 'dark'
-
-    const handleToggleDarkMode = () => {
-        setMode(darkModeEnabled ? 'light' : 'dark')
-    }
     return (
         <IconButton
             aria-label="Toggle Dark Mode"
