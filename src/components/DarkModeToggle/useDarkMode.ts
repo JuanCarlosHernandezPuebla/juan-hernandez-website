@@ -5,11 +5,11 @@ const useDarkMode = () => {
 
     const darkModeEnabled = mode === 'dark'
 
-    const handleToggleDarkMode = () => {
+    const handleDarkModeToggle = () => {
         setMode(darkModeEnabled ? 'light' : 'dark')
     }
 
-    return { mode, darkModeEnabled, handleToggleDarkMode }
+    return { mode, darkModeEnabled, handleDarkModeToggle }
 }
 
 export default useDarkMode

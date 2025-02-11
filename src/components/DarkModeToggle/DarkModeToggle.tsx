@@ -3,7 +3,7 @@ import { DarkModeRounded, LightModeRounded } from '@mui/icons-material'
 import useDarkMode from './useDarkMode'
 
 const DarkModeToggle = () => {
-    const { mode, darkModeEnabled, handleToggleDarkMode } = useDarkMode()
+    const { mode, darkModeEnabled, handleDarkModeToggle } = useDarkMode()
 
     if (!mode) {
         return null
@@ -21,7 +21,7 @@ const DarkModeToggle = () => {
                         color: 'primary.main',
                     }),
             ]}
-            onClick={handleToggleDarkMode}
+            onClick={handleDarkModeToggle}
         >
             {darkModeEnabled ? <LightModeRounded /> : <DarkModeRounded />}
         </IconButton>
