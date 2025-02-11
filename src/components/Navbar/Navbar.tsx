@@ -5,55 +5,19 @@ import {
     Box,
     Container,
     Divider,
-    Drawer,
     IconButton,
     Toolbar,
     Typography,
 } from '@mui/material'
 import { Menu as MenuIcon } from '@mui/icons-material'
-import { useState } from 'react'
 import NavTabs, { NavItem } from '../NavTabs'
 import DarkModeToggle from '../DarkModeToggle'
 import { NextLinkComposed } from '../Link'
-
-const drawerWidth = 240
+import NavDrawer from '../NavDrawer'
+import useNavDrawer from './useNavDrawer'
 
 function Navbar({ navItems }: { navItems: NavItem[] }) {
-    const [mobileOpen, setMobileOpen] = useState(false)
-
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState)
-    }
-
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography
-                className="text-center text-base"
-                variant="h6"
-                sx={{ my: 2 }}
-            >
-                Juan Carlos Hernandez Puebla
-            </Typography>
-            <Divider />
-            <NavTabs
-                key="vertical_nav"
-                navItems={navItems}
-                orientation="vertical"
-            />
-            <Box
-                sx={[
-                    () => ({
-                        '.MuiIconButton-root': {
-                            color: 'inherit',
-                        },
-                    }),
-                ]}
-            >
-                <Divider sx={{ mb: 3 }} />
-                <DarkModeToggle key="verticle_nav_dark_mode_toggle" />
-            </Box>
-        </Box>
-    )
+    const { drawerOpen, handleDrawerToggle } = useNavDrawer()
 
     return (
         <>
@@ -131,24 +95,13 @@ function Navbar({ navItems }: { navItems: NavItem[] }) {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Drawer
-                variant="temporary"
-                open={mobileOpen}
-                onClose={handleDrawerToggle}
-                ModalProps={{
-                    keepMounted: true,
-                }}
-                sx={{
-                    display: { xs: 'block' },
-                    '& .MuiDrawer-paper': {
-                        boxSizing: 'border-box',
-                        width: drawerWidth,
-                    },
-                }}
-            >
-                {drawer}
-            </Drawer>
+            <NavDrawer
+                navItems={navItems}
+                drawerOpen={drawerOpen}
+                handleDrawerToggle={handleDrawerToggle}
+            />
         </>
     )
 }
+
 export default Navbar
