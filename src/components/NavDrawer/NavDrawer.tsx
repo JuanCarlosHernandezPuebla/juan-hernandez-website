@@ -30,6 +30,7 @@ const NavDrawer = ({
                 <Typography
                     className="text-center text-base"
                     variant="h6"
+                    component="h2"
                     sx={{ my: 2 }}
                 >
                     Juan Carlos Hernandez Puebla
