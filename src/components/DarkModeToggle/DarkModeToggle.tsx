@@ -1,4 +1,4 @@
-import { IconButton } from '@mui/material'
+import { Box, IconButton, Skeleton } from '@mui/material'
 import { DarkModeRounded, LightModeRounded } from '@mui/icons-material'
 import useDarkMode from './useDarkMode'
 
@@ -6,7 +6,11 @@ const DarkModeToggle = () => {
     const { mode, darkModeEnabled, handleDarkModeToggle } = useDarkMode()
 
     if (!mode) {
-        return null
+        return (
+            <Box sx={{ padding: '0.5rem' }}>
+                <Skeleton variant="circular" width={24} height={24} />
+            </Box>
+        )
     }
 
     return (
