@@ -10,7 +10,7 @@ const Footer = ({ navItems }: FooterProps) => {
         <footer className="flex bg-gray-600 text-center text-white dark:bg-gray-900">
             <Container className="p-6">
                 <Box
-                    className="place-self-center"
+                    className="justify-center"
                     sx={{ display: { xs: 'none', md: 'flex' } }}
                 >
                     {navItems.map(({ id, label, href }) => (
